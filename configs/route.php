@@ -9,7 +9,7 @@ $route = new RouteWayController();
     Начинать с функции Way
  */
 
-$route->route('/')->method('POST')->controller('main@index');
+$route->route('/')->method('GET')->controller('main@index');
 $route->route('/test')->controller('main@index');
 $route->route('/show')->method('GET')->controller('showText@index');
 

@@ -1,6 +1,6 @@
 <?php
 
-require 'core/DataBase.php';
+require 'core/DB_func.php';
 
 
 class Controller
@@ -12,7 +12,7 @@ class Controller
      */
     public function __construct()
     {
-        $this->db = new DataBase();
+        $this->db = new DB_func();
         require $_SERVER['DOCUMENT_ROOT'] . '/view/header.php';
     }
 
@@ -34,6 +34,7 @@ class Controller
             global $$k;
             $$k = $v;
         }
+        
         require $_SERVER['DOCUMENT_ROOT'] . '/view/' . $page . '.php';
     }
 }

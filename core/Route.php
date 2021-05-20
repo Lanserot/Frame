@@ -27,6 +27,7 @@ class Route
             $route = RouteController::checkRoute($this->routes[$i], $this->url);
             if ($route !== false) {
                 $this->callController($route);
+                return;
             }
         }
 

@@ -7,7 +7,8 @@ class ShowTextController extends Controller
     public function index()
     {
         $this->render('show/index', [
-            'testParam' => $this->db->query("SELECT * FROM test")
+            'testParam' => $this->db->get('test')->where('id > 2')->all(),
+            'testParam2' => $this->db->get('test')->where('id > 10')->first()
         ]);
     }
 }
