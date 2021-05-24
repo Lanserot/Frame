@@ -1,18 +1,17 @@
 <?php
 
-require 'core/DB_func.php';
 
-
+/**
+ * Главный контроллер, от него наследуются все контроллеры
+ */
 class Controller
 {
-    protected $db = NULL;
 
     /**
      *
      */
     public function __construct()
     {
-        $this->db = new DB_func();
         require $_SERVER['DOCUMENT_ROOT'] . '/view/header.php';
     }
 
@@ -22,7 +21,6 @@ class Controller
     public function __destruct()
     {
         require $_SERVER['DOCUMENT_ROOT'] . '/view/footer.php';
-        unset($this->db);
     }
 
     /**
@@ -34,7 +32,7 @@ class Controller
             global $$k;
             $$k = $v;
         }
-        
+
         require $_SERVER['DOCUMENT_ROOT'] . '/view/' . $page . '.php';
     }
 }

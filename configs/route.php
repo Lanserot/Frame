@@ -6,7 +6,7 @@ $route = new RouteWayController();
 
 
 /**
-    Начинать с функции Way
+ * Начинать с функции Way
  */
 
 $route->route('/')->method('GET')->controller('main@index');

@@ -2,7 +2,7 @@
 
 /**
  * Класс для прописывания данных о рутере
-*/
+ */
 class RouteWayController
 {
     public $routes = [];

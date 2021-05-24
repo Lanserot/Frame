@@ -1,12 +1,12 @@
 <?php
 
-require 'DataBase.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/core/DB/DB.php';
 
 
 /**
  * Класс с функциями для бд
  */
-class DB_func extends DataBase
+class DB_func extends DB
 {
     public $sql = '';
 

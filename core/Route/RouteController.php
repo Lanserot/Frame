@@ -7,7 +7,7 @@ class RouteController
 {
     /**
      * Фнукция для проверки валидности рутера
-    */
+     */
     static function checkRoute($route, $url)
     {
 

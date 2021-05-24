@@ -1,6 +1,6 @@
 <?php
 
-require 'Route/RouteController.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/core/Route/RouteController.php';
 
 /**
  * Главный класс в рутере

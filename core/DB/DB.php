@@ -1,9 +1,10 @@
 <?php
 
-
-class DataBase
+/**
+ * Класс для подключения к бд
+ */
+class DB
 {
-
     private $link;
 
     public function __construct()
@@ -13,7 +14,7 @@ class DataBase
 
     private function connect()
     {
-        $config = require_once 'configs/db.php';
+        $config = require_once $_SERVER['DOCUMENT_ROOT'] . '/configs/db.php';
 
         $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['db_name'] . ';charset=' . $config['charset'];
 

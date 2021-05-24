@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Функция для вывода массива
  */
 function pre($array)
 {
@@ -10,7 +10,7 @@ function pre($array)
 }
 
 /**
- *
+ * рандомный генератор чисел
  */
 function generateRandomString($length = 10)
 {
