@@ -1,5 +1,9 @@
 <?php
 
+namespace Core\DB;
+
+use PDO;
+
 /**
  * Класс для подключения к бд
  */

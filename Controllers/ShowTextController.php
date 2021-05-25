@@ -1,7 +1,9 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . '/core/Controller/Controller.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/Models/ShowTextModel.php';
+namespace Controllers;
+
+use Core\Controller\Controller;
+use Models\ShowTextModel;
 
 class ShowTextController extends Controller
 {

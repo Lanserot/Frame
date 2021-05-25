@@ -1,6 +1,7 @@
 <?php
+namespace core\Model;
 
-require $_SERVER['DOCUMENT_ROOT'] . '/core/DB/DB_func.php';
+use Core\DB\DB_func;
 
 /**
  * Основной класс моделей, от которого будут наследоваться все модели

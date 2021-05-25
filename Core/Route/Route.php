@@ -1,11 +1,12 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . '/core/Route/RouteController.php';
+namespace Core\Route;
+
+
 
 /**
  * Главный класс в рутере
  */
-
 class Route
 {
     private $url = [];
@@ -36,12 +37,11 @@ class Route
 
     /**
      * Вызов контроллера, если рутер подходит
-    */
+     */
     private function callController($class)
     {
-        $class[0] = ucfirst($class[0]) . 'Controller';
-        require $_SERVER['DOCUMENT_ROOT'] . '/controllers/' . $class[0] . '.php';
-        $start = new $class[0];
+        $name = '\Controllers\\'.$class[0];
+        $start = new $name();
         $method = $class[1];
         $start->$method();
     }

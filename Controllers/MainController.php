@@ -1,6 +1,8 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . '/core/Controller/Controller.php';
+namespace Controllers;
+
+use Core\Controller\Controller;
 
 class MainController extends Controller
 {

@@ -1,6 +1,7 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . '../core/Route/RouteWayController.php';
+use Core\Route\RouteWayController;
+
 
 $route = new RouteWayController();
 
@@ -9,9 +10,9 @@ $route = new RouteWayController();
  * Начинать с функции Way
  */
 
-$route->route('/')->method('GET')->controller('main@index');
-$route->route('/test')->controller('main@index');
-$route->route('/show')->method('GET')->controller('showText@index');
+$route->route('/')->method('GET')->controller('MainController@index');
+$route->route('/test')->controller('MainController@index');
+$route->route('/show')->method('GET')->controller('ShowTextController@index');
 
 
 return $route->routes;

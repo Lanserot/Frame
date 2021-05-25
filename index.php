@@ -1,8 +1,9 @@
 <?php
 require 'functions.php';
-require 'core/Route/Route.php';
 
+use Core\Route\Route;
 
 $route = new Route();
 
 $route->route();
+

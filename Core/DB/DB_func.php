@@ -1,7 +1,7 @@
 <?php
+namespace Core\DB;
 
-require $_SERVER['DOCUMENT_ROOT'] . '/core/DB/DB.php';
-
+use Core\DB\DB;
 
 /**
  * Класс с функциями для бд
