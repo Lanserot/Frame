@@ -12,6 +12,7 @@ $route = new RouteWayController();
 
 $route->route('/')->method('GET')->controller('MainController@index');
 $route->route('/test')->controller('MainController@index');
+$route->route('/show')->method('POST')->controller('ShowTextController@index');
 $route->route('/show')->method('GET')->controller('ShowTextController@index');
 
 
