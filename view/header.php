@@ -1,3 +1,6 @@
+<?php
+use Core\Route\Route;
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,8 +21,8 @@
 <body>
 <div class="container">
     <nav>
-        <a href="/">Главная</a>
-        <a href="/show">Показать</a>
+        <a href="<?= Route::route('main')?>">Главная</a>
+        <a href="<?= Route::route('show')?>">Показать</a>
     </nav>
 </div>
 <div class="container main">

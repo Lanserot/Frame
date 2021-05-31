@@ -24,7 +24,11 @@ class RouteWayController
         $this->routes[$this->count]['method'] = $method;
         return $this;
     }
-
+    public function name($name)
+    {
+        $this->routes[$this->count]['name'] = $name;
+        return $this;
+    }
     public function controller($method)
     {
         $method = explode('@', $method);

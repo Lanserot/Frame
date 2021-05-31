@@ -8,6 +8,7 @@ spl_autoload_register(function ($name) {
     if (file_exists('Controllers\\' . $name . '.php')) {
         require 'Controllers\\' . $name . '.php';
     }
+    
 });
 
 function ec(string $string)
