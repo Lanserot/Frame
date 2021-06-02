@@ -1,5 +1,7 @@
 <?php
 
+require 'Core/ErrorLog/Error.php';
+
 spl_autoload_register(function ($name) {
 
     if (file_exists($name . '.php')) {
@@ -8,7 +10,7 @@ spl_autoload_register(function ($name) {
     if (file_exists('Controllers\\' . $name . '.php')) {
         require 'Controllers\\' . $name . '.php';
     }
-    
+
 });
 
 function ec(string $string)
@@ -16,9 +18,11 @@ function ec(string $string)
     echo $string . "<br>";
 }
 
-function absolute(string $text) : void{
+function absolute(string $text): void
+{
     ec("<div style='background: #000; color: white; padding: 10px; position: absolute; right: 0; top: 0;'>$text</div>");
 }
+
 /**
  * Функция для вывода массива
  */
