@@ -11,6 +11,8 @@ use Core\Route\Route;
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="/view/css/style.css" rel="stylesheet"
+          crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
@@ -22,6 +24,7 @@ use Core\Route\Route;
 <div class="container">
     <nav>
         <a href="<?= Route::route('main')?>">Главная</a>
+        <a href="<?= Route::route('main2')?>">Второй</a>
         <a href="<?= Route::route('show')?>">Показать</a>
     </nav>
 </div>

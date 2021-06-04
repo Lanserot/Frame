@@ -1,3 +1,5 @@
 .idea
 configs/db.php
 logs.txt
+view/index2.php
+view/test.php

@@ -11,6 +11,7 @@ $route = new RouteWayController();
  */
 
 $route->route('/')->method('GET')->controller('MainController@index')->name('main');
+$route->route('/sec')->method('GET')->controller('MainController@index2')->name('main2');
 //$route->route('/test')->controller('MainController@index');
 $route->route('/show')->method('POST')->controller('ShowTextController@index');
 $route->route('/show')->method('GET')->controller('ShowTextController@index')->name('show');
