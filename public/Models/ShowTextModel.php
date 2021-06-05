@@ -1,6 +1,6 @@
 <?php
 
-namespace Models;
+namespace public\Models;
 
 use Core\Model\Model;
 

@@ -60,7 +60,7 @@ class RouteMain
      */
     private function callController($class)
     {
-        $name = '\Controllers\\'.$class[0];
+        $name = 'public\Controllers\\'.$class[0];
         $start = new $name();
         $method = $class[1];
         $start->$method();

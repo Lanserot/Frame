@@ -1,9 +1,9 @@
 <?php
 
-namespace Controllers;
+namespace public\Controllers;
 
 use Core\Controller\Controller;
-use Models\ShowTextModel;
+use public\Models\ShowTextModel;
 
 class ShowTextController extends Controller
 {

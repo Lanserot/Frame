@@ -13,7 +13,7 @@ class Controller
      */
     public function __construct()
     {
-        require $_SERVER['DOCUMENT_ROOT'] . '/view/header.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/public/view/header.php';
     }
 
     /**
@@ -21,7 +21,7 @@ class Controller
      */
     public function __destruct()
     {
-        require $_SERVER['DOCUMENT_ROOT'] . '/view/footer.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/public/view/footer.php';
     }
 
     /**
@@ -34,6 +34,6 @@ class Controller
             $$k = $v;
         }
 
-        require $_SERVER['DOCUMENT_ROOT'] . '/view/' . $page . '.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/public/view/' . $page . '.php';
     }
 }

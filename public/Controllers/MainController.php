@@ -1,6 +1,6 @@
 <?php
 
-namespace Controllers;
+namespace public\Controllers;
 
 use Core\Controller\Controller;
 
